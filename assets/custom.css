@@ -1,0 +1,35 @@
+H1, H2, P {
+    color: white
+}
+
+Hr {
+    border-color: white;
+}
+
+.nav-pills .nav-link:hover { 
+    color: black; background-color: white
+}
+.nav-pills .nav-link.active { 
+    color: white; background-color: #2f3744
+}
+.nav-pills .nav-link.active:hover { 
+    color: black; background-color: white
+}
+.nav-pills .nav-link{ 
+    color: white;
+
+}
+.jumbotron {
+    background-color: #1e2130;
+    text-align: center;
+}
+
+body {
+    background-color:  #272a3b; 
+}
+
+
+/* old
+RGU MAIN - #712177 - not used here
+RGU MID - #86428b
+RGU LIGHT - #955999 */
