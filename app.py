@@ -123,9 +123,7 @@ app.layout = html.Div([
     sidebar,
     button,
     content,
-]
-
-)
+])
 
 # content callback
 @app.callback(
