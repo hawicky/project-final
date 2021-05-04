@@ -79,7 +79,7 @@ SIDEBAR_STYLE_COLLAPSED = {
     "padding-top": "1rem",
 }
 
-# sidebar div
+# sidebar object
 sidebar = html.Div(
     [
         html.H2("Moodle Analytics", className="display-4"),
@@ -101,7 +101,7 @@ sidebar = html.Div(
     style=SIDEBAR_STYLE
 )
 
-# button div
+# button object
 button = html.Div(
     [
         dbc.Button("☰", outline=True, id="show_hide", color="light")
@@ -110,7 +110,7 @@ button = html.Div(
     style=BUTTON_STYLE
 )
 
-# content div
+# content object
 content = html.Div(
     id="page-content",
     style=CONTENT_STYLE
@@ -128,8 +128,6 @@ app.layout = html.Div([
 )
 
 # content callback
-
-
 @app.callback(
     [
         Output("sidebar", "style"),
@@ -165,8 +163,6 @@ def toggle_sidebar(n, nclick):
     return sidebar_style, content_style, button_style, cur_nclick
 
 # page content callback
-
-
 @app.callback(
     Output("page-content", "children"),
     [Input("url", "pathname")]
